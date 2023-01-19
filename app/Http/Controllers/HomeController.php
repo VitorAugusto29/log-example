@@ -60,10 +60,10 @@ class HomeController extends Controller
         }
 
     }
-    public function mult($num){
+    public function mult($num1, $num2){
    
                
-        if ($num1 + $num2 == 0) {
+        if ($num1 = 0 $num2 = 0) {
 
              logger()->WARNING('Negativo');
          }
