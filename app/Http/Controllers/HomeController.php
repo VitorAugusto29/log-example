@@ -52,7 +52,7 @@ class HomeController extends Controller
     {
                
         if ($num2 == 0) {
-         logger()->ERRO('Divisor zero!');
+         logger()->error('Divisor zero!');
         }else{
             $div = $num1 / $num2;
          logger()->info('Div feita');
