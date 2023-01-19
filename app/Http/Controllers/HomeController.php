@@ -50,16 +50,16 @@ class HomeController extends Controller
     }
     public function div($num1, $num2)
     {
-
-        $div = $num1 / $num2;
-        
-
+               
         if ($num2 == 0) {
-         logger()->erro('Divisor zero!', compact('div'));
+         logger()->erro('Divisor zero!');
         }else{
+            $div = $num1 / $num2;
         logger()->INFORMAÇÃO('Div feita');
+            return $div;
         }
-        return $div;
+
+       
     }
     
         
